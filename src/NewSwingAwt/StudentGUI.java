@@ -26,7 +26,7 @@ public class StudentGUI extends JFrame implements ActionListener {
         Font labelFont = new Font("Arial", Font.BOLD, 14);
         Font fieldFont = new Font("Consolas", Font.PLAIN, 14);
 
-        // Fields
+        
         formPanel.add(createLabel("Name:", labelFont));
         nameField = createField(fieldFont);
         formPanel.add(nameField);
@@ -65,14 +65,14 @@ public class StudentGUI extends JFrame implements ActionListener {
 
         add(formPanel, BorderLayout.NORTH);
 
-        // Output
+        
         output = new JTextArea();
         output.setFont(new Font("Consolas", Font.PLAIN, 14));
         output.setBackground(Color.BLACK);
         output.setForeground(Color.GREEN);
         add(new JScrollPane(output), BorderLayout.CENTER);
 
-        // Buttons
+        
         JPanel buttonPanel = new JPanel();
         buttonPanel.setBackground(new Color(30, 30, 30));
 
@@ -96,7 +96,7 @@ public class StudentGUI extends JFrame implements ActionListener {
         setVisible(true);
     }
 
-    // Styled Components
+    
     private JLabel createLabel(String text, Font font) {
         JLabel lbl = new JLabel(text);
         lbl.setForeground(Color.WHITE);
@@ -119,7 +119,7 @@ public class StudentGUI extends JFrame implements ActionListener {
         return btn;
     }
 
-    // DB Connection
+    
     public void connectDB() {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -135,7 +135,7 @@ public class StudentGUI extends JFrame implements ActionListener {
         }
     }
 
-    // Actions
+    
     public void actionPerformed(ActionEvent e) {
 
         if (e.getSource() == calcBtn) calculate();
@@ -143,7 +143,7 @@ public class StudentGUI extends JFrame implements ActionListener {
         if (e.getSource() == viewBtn) viewData();
     }
 
-    // Calculate
+    
     public void calculate() {
         try {
             int m1 = Integer.parseInt(m1Field.getText());
@@ -175,7 +175,7 @@ public class StudentGUI extends JFrame implements ActionListener {
         }
     }
 
-    // Insert
+    
     public void insertData() {
         try {
             String name = nameField.getText();
@@ -205,7 +205,7 @@ public class StudentGUI extends JFrame implements ActionListener {
             if (res > 0) {
                 JOptionPane.showMessageDialog(this, "Inserted Successfully!");
 
-                // Clear
+                
                 nameField.setText("");
                 m1Field.setText("");
                 m2Field.setText("");
@@ -221,7 +221,7 @@ public class StudentGUI extends JFrame implements ActionListener {
         }
     }
 
-    // View
+    
     public void viewData() {
         try {
             Statement st = con.createStatement();
