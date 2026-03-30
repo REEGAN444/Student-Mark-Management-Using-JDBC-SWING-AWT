@@ -77,10 +77,8 @@ Connection con = DriverManager.getConnection(
 
 ---
 
-```
-<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/280d514f-1c5a-4f4e-9bd9-e4d0088f24c6" />
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/b66db5a5-7990-4711-93d1-c53858caf59f" />
 
-```
 
 ## ▶️ How to Run
 
