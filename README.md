@@ -42,8 +42,8 @@ A simple **Java GUI-based application** to manage student records with **marks, 
 ### Step 1: Create Database
 
 ```sql
-CREATE DATABASE reegan;
-USE reegan;
+CREATE DATABASE YOUR_DB_NAME;
+USE YOUR_DB_NAME;
 ```
 
 ### Step 2: Create Table
@@ -69,9 +69,9 @@ Update your DB credentials in code:
 
 ```java
 Connection con = DriverManager.getConnection(
-    "jdbc:mysql://localhost:3306/reegan",
-    "root",
-    "your_password"
+    "DATABASE_CONNECTION_PATH",
+    "USER_NAME",
+    "USER_PASSWORD"
 );
 ```
 
@@ -130,7 +130,7 @@ java -cp "StudentApp.jar;mysql-connector-j-8.x.x.jar" NewSwingAwt.StudentGUI
 
 ## 👨‍💻 Author
 
-**Immanuvel Reegan**
+**IMMANUVEL REEGAN A**
 
 ---
 
