@@ -76,7 +76,7 @@ Connection con = DriverManager.getConnection(
 ```
 
 ---
-# Actual GUI
+🖼️ Actual GUI
 
 <img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/b66db5a5-7990-4711-93d1-c53858caf59f" />
 
