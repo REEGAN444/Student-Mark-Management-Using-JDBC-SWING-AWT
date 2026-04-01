@@ -125,9 +125,9 @@ public class StudentGUI extends JFrame implements ActionListener {
             Class.forName("com.mysql.cj.jdbc.Driver");
 
             con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/reegan",
-                    "root",
-                    "//oppoA11K"
+                    "jdbc:mysql://localhost:3306/DB_NAME",
+                    "Username",
+                    "Password"
             );
 
         } catch (Exception e) {
